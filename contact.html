@@ -2,13 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coffee Time</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fffaf7;
+      padding: 40px;
+      padding-top: 120px; /* ruang untuk navbar */
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-left,
+    .contact-right {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .btn-call {
+      border: 1px solid #000;
+      background-color: transparent;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .btn-send {
+      border: 1px solid #000;
+      background-color: transparent;
+      padding: 8px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .support-box {
+      background-color: #3a2a28;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 14px;
+      max-width: 300px;
+    }
+
+    .support-box a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .form-control::placeholder {
+      font-size: 13px;
+    }
+
+    .form-control {
+      font-size: 14px;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    /* Optional: Sticky navbar fix */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
 
-<!-- ======== NAVBAR ======== -->
+<!-- ✅ Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -38,104 +121,62 @@
     </div>
   </div>
 </nav>
+<!-- ✅ Navbar End -->
 
-<!-- ======== FOOTER ======== -->
-<footer class="bg-light py-5" style="background: linear-gradient(to right, #e3d3b8, #d1b992);">
-  <div class="container-fluid" style="padding: 1rem 100px;">
-    <div class="row text-dark justify-content-between flex-wrap">
+<!-- ✅ Contact Section -->
+<div class="container contact-container">
+  <!-- LEFT SIDE -->
+  <div class="contact-left">
+    <h3 class="text-uppercase mb-3">Contact Us</h3>
+    <button class="btn btn-call mb-4">CALL US +1 383 374 983</button>
 
-      <!-- Logo + Brand Name (sejajar horizontal) -->
-        <div class="col-12 mb-4 d-flex align-items-center gap-2">
-            <img src="assets/Logo.png" alt="Logo" style="height: 40px;">
-            <h5 class="fw-bold mb-0">COFFEE TIME</h5>
-        </div>
+    <p>Find the perfect coffee for your taste.</p>
+    <p>Try our best-selling blends from Coffee Time.</p>
+    <p>Explore our coffee collections for your shop or personal enjoyment.</p>
+    <p class="text-muted small">
+      *All calls with our sales team are<br />currently available in English and Bahasa Indonesia.
+    </p>
 
-      <!-- HOME -->
-      <div class="col-auto">
-        <h6 class="fw-bold">HOME</h6>
-        <ul class="list-unstyled">
-          <li>Home</li>
-          <li>Our Story</li>
-          <li>Highlights</li>
-          <li>Coffee Time</li>
-        </ul>
-      </div>
-
-      <!-- ABOUT US -->
-      <div class="col-auto">
-        <h6 class="fw-bold">ABOUT US</h6>
-        <ul class="list-unstyled">
-          <li>Who we are</li>
-          <li>Our Mission</li>
-          <li>Meet Team</li>
-          <li>Career</li>
-        </ul>
-      </div>
-
-      <!-- PRODUCTS -->
-      <div class="col-auto">
-        <h6 class="fw-bold">PRODUCTS</h6>
-        <ul class="list-unstyled">
-          <li>All Product</li>
-          <li>Best Seller</li>
-          <li>Category</li>
-          <li>How To Order</li>
-        </ul>
-      </div>
-
-      <!-- BLOG -->
-      <div class="col-auto">
-        <h6 class="fw-bold">BLOG</h6>
-        <ul class="list-unstyled">
-          <li>Brewing Tips</li>
-          <li>Coffee Facts</li>
-          <li>Articles</li>
-          <li>Last Articles</li>
-        </ul>
-      </div>
-
-      <!-- CONTACT -->
-      <div class="col-auto">
-        <h6 class="fw-bold">CONTACT</h6>
-        <ul class="list-unstyled">
-          <li>Contact Form</li>
-          <li>Customer</li>
-          <li>Visit</li>
-          <li>Chat With Us</li>
-        </ul>
-      </div>
-
-      <!-- FAQ -->
-      <div class="col-auto">
-        <h6 class="fw-bold">FAQ</h6>
-        <ul class="list-unstyled">
-          <li>How To Order</li>
-          <li>Shipping Info</li>
-          <li>Payment</li>
-          <li>Return Police</li>
-        </ul>
-      </div>
-
-      <!-- SOCIAL -->
-      <div class="col-auto">
-        <h6 class="fw-bold">CONNECT WITH US</h6>
-        <div class="d-flex gap-2 mt-2">
-          <img src="assets/Instagram.png" alt="Instagram" width="24">
-          <img src="assets/Whatsapp.png" alt="WhatsApp" width="24">
-          <img src="assets/X.png" alt="X" width="24">
-          <img src="assets/Youtube.png" alt="YouTube" width="24">
-        </div>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center mt-4 pt-3 border-top border-dark-subtle small">
-      &copy; 20020 - 2025 Coffee Time. All rights reserved
+    <div class="support-box text-center">
+      Need help with your CoffeeTime account? <a href="#">Get Support.</a>
     </div>
   </div>
-</footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- RIGHT SIDE -->
+  <div class="contact-right">
+    <h3 class="mb-4">Email Us</h3>
+    <form>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">First name *</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Last name *</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="phone">Phone number *</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email">Email address *</label>
+          <input type="email" class="form-control" id="email" placeholder="name@gmail.com" required />
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="reason">Reason for contacting us *</label>
+        <textarea class="form-control" id="reason" rows="4" placeholder="I'd like to know more about..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-send">SEND</button>
+    </form>
+  </div>
+</div>
+
+<!-- ✅ Bootstrap JS (wajib agar navbar bisa toggle di mobile) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
