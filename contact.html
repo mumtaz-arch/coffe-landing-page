@@ -1,137 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Coffee Time</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('assets/Background.svg') no-repeat center center;
+      background-size: cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .btn-outline-light {
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+  </style>
 </head>
 <body>
 
-<!-- ======== NAVBAR ======== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-  <a class="navbar-brand fw-bold" href="#">COFFEE TIME</a>
-
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-    </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown me-2">
-        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
-          🌐 EN
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">🇬🇧 English</a></li>
-          <li><a class="dropdown-item" href="#">🇮🇩 Bahasa</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-dark" href="#">FIND STORE</a>
-      </li>
-    </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">COFFEE TIME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-5">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown me-2">
+          <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
+            🌐 EN
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">🇬🇧 English</a></li>
+            <li><a class="dropdown-item" href="#">🇮🇩 Bahasa</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-dark" href="#">FIND STORE</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
-
-<!-- ======== FOOTER ======== -->
-<footer class="bg-light py-5" style="background: linear-gradient(to right, #e3d3b8, #d1b992);">
-  <div class="container-fluid" style="padding: 1rem 100px;">
-    <div class="row text-dark justify-content-between flex-wrap">
-
-      <!-- Logo + Brand Name (sejajar horizontal) -->
-        <div class="col-12 mb-4 d-flex align-items-center gap-2">
-            <img src="assets/Logo.png" alt="Logo" style="height: 40px;">
-            <h5 class="fw-bold mb-0">COFFEE TIME</h5>
-        </div>
-
-      <!-- HOME -->
-      <div class="col-auto">
-        <h6 class="fw-bold">HOME</h6>
-        <ul class="list-unstyled">
-          <li>Home</li>
-          <li>Our Story</li>
-          <li>Highlights</li>
-          <li>Coffee Time</li>
-        </ul>
-      </div>
-
-      <!-- ABOUT US -->
-      <div class="col-auto">
-        <h6 class="fw-bold">ABOUT US</h6>
-        <ul class="list-unstyled">
-          <li>Who we are</li>
-          <li>Our Mission</li>
-          <li>Meet Team</li>
-          <li>Career</li>
-        </ul>
-      </div>
-
-      <!-- PRODUCTS -->
-      <div class="col-auto">
-        <h6 class="fw-bold">PRODUCTS</h6>
-        <ul class="list-unstyled">
-          <li>All Product</li>
-          <li>Best Seller</li>
-          <li>Category</li>
-          <li>How To Order</li>
-        </ul>
-      </div>
-
-      <!-- BLOG -->
-      <div class="col-auto">
-        <h6 class="fw-bold">BLOG</h6>
-        <ul class="list-unstyled">
-          <li>Brewing Tips</li>
-          <li>Coffee Facts</li>
-          <li>Articles</li>
-          <li>Last Articles</li>
-        </ul>
-      </div>
-
-      <!-- CONTACT -->
-      <div class="col-auto">
-        <h6 class="fw-bold">CONTACT</h6>
-        <ul class="list-unstyled">
-          <li>Contact Form</li>
-          <li>Customer</li>
-          <li>Visit</li>
-          <li>Chat With Us</li>
-        </ul>
-      </div>
-
-      <!-- FAQ -->
-      <div class="col-auto">
-        <h6 class="fw-bold">FAQ</h6>
-        <ul class="list-unstyled">
-          <li>How To Order</li>
-          <li>Shipping Info</li>
-          <li>Payment</li>
-          <li>Return Police</li>
-        </ul>
-      </div>
-
-      <!-- SOCIAL -->
-      <div class="col-auto">
-        <h6 class="fw-bold">CONNECT WITH US</h6>
-        <div class="d-flex gap-2 mt-2">
-          <img src="assets/Instagram.png" alt="Instagram" width="24">
-          <img src="assets/Whatsapp.png" alt="WhatsApp" width="24">
-          <img src="assets/X.png" alt="X" width="24">
-          <img src="assets/Youtube.png" alt="YouTube" width="24">
+  <div class="container py-5">
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-6 mb-4">
+        <h2>Contact Us</h2>
+        <button class="contact-btn my-3">CALL US +1 383 374 983</button>
+        <p>Find the perfect coffee for your taste.</p>
+        <p>Try our best-selling blends from Coffee Time.</p>
+        <p>Explore our coffee collections for your shop or personal enjoyment.</p>
+        <p class="mt-4" style="font-size: 0.9rem;">
+          *All calls with our sales team are currently available in English and Bahasa Indonesia.
+        </p>
+        <div class="support-box mt-4">
+          Need help with your CoffeeTime account? <a href="#">Get Support.</a>
         </div>
       </div>
-    </div>
 
-    <!-- Copyright -->
-    <div class="text-center mt-4 pt-3 border-top border-dark-subtle small">
-      &copy; 20020 - 2025 Coffee Time. All rights reserved
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <h2>Email Us</h2>
+        <form>
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <input type="tel" class="form-control" placeholder="Enter phone number" required>
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="name@gmail.com" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="I’d like to know more about..." required></textarea>
+          </div>
+          <button type="submit" class="send-btn mt-2">Send</button>
+        </form>
+      </div>
     </div>
   </div>
-</footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
